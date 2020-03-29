@@ -16,7 +16,6 @@ class ResourceRequestHandler(tornado.web.RequestHandler):
     def get(self, id):
         self.write("Tweet Id is " + id)
 
-
 class StaticRequesthandler(tornado.web.RequestHandler):
     def get(self):
         self.render("index.html")
